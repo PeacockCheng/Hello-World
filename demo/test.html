@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"   content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Title</title>
+    <link href="./css/base.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div>
+        <div>
+            <img src="" class="banner">
+        </div>
+        <div class="content">
+            <p class="con_title">邀请好友获得优惠券</p>
+            <div class="award">
+                <p>一等奖1名</p>
+                <p>300无门槛消费代金券</p>
+            </div>
+            <div class="award">
+                <p>一等奖1名</p>
+                <p>300无门槛消费代金券</p>
+            </div>
+        </div>
+    </div>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</body>
+</html>
